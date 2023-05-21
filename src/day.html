@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label> Full Name </label>
+            <br>
+            <input type="text" id="name" placeholder="Enter your Name:" class="styling" required />
+            <span id = "message" style="color:red"> </span>
+            <br>
+            <br>
+
+            <label> Email </label>
+            <br>
+            <input type="email" placeholder="a-z 0-9@emaple.com" id="email" class="styling" />
+            <br>
+            <br>
+
+            <form>
+                <fieldset>
+                    <legend>Confirm password</legend>
+                    <label>Password</label>
+                    <input type="Password" placeholder="Password" id="pass" value="" name="pass" class="styling"
+                        required> <br><br>
+
+                    <label>Re-type password</label>
+                    <input type="Password" placeholder="Confirn Password"  id="repass" value="" name="repass"
+                        class="styling"  required>
+                    <span id = "invalid" style="color:red"> </span>
+                </fieldset>
+            </form>
+
+            <br>
+            <label> City </label>
+            <br>
+            <select>
+                <option value="Cairo">Cairo</option>
+                <option value="Alexandria">Alexandria</option>
+                <option value="Giza">Giza</option>
+                <option value="Port Said">Port Said</option>
+                <option value="Suez">Suez</option>
+                <option value="Tanta">Tanta</option>
+                <option value="Asyut">Asyut</option>
+            </select>
+            <br>
+            <br>
+
+            <label> Gender </label>
+            <br>
+            <input type="radio" value="male" name="gender" /> Male <br>
+            <input type="radio" value="female" name="gender" /> Female <br>
+            <input type="radio" value="other" name="gender" /> Other
+            <br>
+            <br>
+
+            <input type="checkbox" value="I accept the terms and conditions" id="agree"  name= "agree" required />
+            <label for="agree"> I accept the terms and conditions</label>
+            <br>
+            <br>
+            <input type="button" value="Submit" onclick="ckeck()" id="button" />
+
+        </form>
+    </div>
+    <script src="day.js"></script>
+    <script src="dom.js"></script>
+</body>
+
+</html>
